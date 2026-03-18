@@ -56,6 +56,10 @@ a:hover {
   background: var(--white);
 }
 
+.content > p {
+  margin-bottom: 16px;
+}
+
 /* === Nav (subpages) === */
 .site-nav {
   display: flex;
@@ -92,7 +96,7 @@ a:hover {
 }
 
 .nav-links a {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--body-text);
   text-decoration: none;
 }
@@ -260,8 +264,8 @@ a:hover {
 }
 
 .profile-photo {
-  width: 90px;
-  height: auto;
+  width: 120px;
+  max-height: 160px;
   border-radius: 4px;
   flex-shrink: 0;
   object-fit: cover;
@@ -282,6 +286,10 @@ a:hover {
 .profile-bio {
   font-size: 15px;
   line-height: 1.7;
+}
+
+.profile-bio p {
+  margin-bottom: 12px;
 }
 
 .profile-bio a {
