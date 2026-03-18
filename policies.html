@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Policies &amp; Procedures — SARL</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="site-nav">
+      <a href="index.html" class="logo">
+        <span class="logo-name">SARL</span>
+        <span class="logo-sub">VANDERBILT UNIVERSITY</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">About SARL</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="facilities.html">Facilities &amp; Equipment</a></li>
+        <li><a href="policies.html" class="active">Policies &amp; Procedures</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1 class="page-title">Policies &amp; Procedures</h1>
+
+    <div class="policy-section">
+      <h2 class="section-heading">Access and Hours of Use</h2>
+      <p>SARL is located in Room 2A Garland Hall (basement level). The SARL door is locked at all times. Access is via key code, which is provided by the SARL RA or director. The lab can be accessed 24/7. Note that the exterior doors to the building are locked in the evening, but users can enter the building via Vanderbilt ID card swipe through the library lawn entrance to Garland Hall</p>
+    </div>
+
+    <div class="policy-section">
+      <h2 class="section-heading">General Use Policy</h2>
+      <p>SARL is intended for use as an advanced GIS lab and production facility. It is not a general computer lab for word processing or other basic computing. The large monitors and 4K TVs in the lab are also intended for collaborative work.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2 class="section-heading">User Community</h2>
+      <p>SARL is intended for use by faculty, research staff, and graduate students. Individuals requesting access should contact the SARL RA to establish a user account.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2 class="section-heading">Acknowledgement Request</h2>
+      <p>Users of SARL are asked to acknowledge SARL in presented or published works, and to submit copies of presentations and publications to SARL.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2 class="section-heading">User Accounts</h2>
+      <p>Each user will be issued a password-protected account and storage on the server. Space on the server will be issued on an as-needed basis. Most accounts should not exceed 20 GB, although larger allotments are possible for those with especially large imagery or other databases.</p>
+      <p>For security, user accounts will not have full administrative use rights to local workstations. Users who require specialized extensions or other software (e.g., free extensions or scripts that require download and installation as .exe files) may contact the SARL RA to facilitate installation.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2 class="section-heading">File Management: Mapping Network Drives</h2>
+      <p>When you are a registered SARL user, you may log in to any workstation in the lab. The first login will take a few minutes as Windows prepares your user profile.</p>
+      <p>Do not save any data on the local hard drive on the workstations in SARL. Hard drives on the workstations are periodically wiped clean and you will lose your data. Only save data to the SARL server. To do so, map a network drive to your user folder:</p>
+      <p><code>\\sarlserver05.cas.vanderbilt.edu\homes\domain=vuds\yourvunetid</code></p>
+      <p>If you are working on a collaborative project that other SARL users will need to access, put the data in the "SARL commons," which is a general storage directory in the server that allows read/write access to all SARL users:</p>
+      <p><code>\\sarlserver05.cas.vanderbilt.edu\sarl_commons</code></p>
+      <p>or, for approved projects, sarlserver06:</p>
+      <p><code>\\sarlserver06.cas.vanderbilt.edu\sarl_commons06</code></p>
+      <p>You can also map to these from non-SARL computers (e.g., your personal laptop). If you are attempting to map to them from off campus, you will first need to install and run Vanderbilt's <a rel="noreferrer noopener" href="https://it.vanderbilt.edu/services/catalog/end-point_computing/network_access/remote-access/index.php" target="_blank">Pulse VPN client</a>.</p>
+      <p>When you map the network drive on your personal machine, ensure that you enter your credentials as "vuds\yourvunetid", not your local login on your computer.</p>
+
+      <h3>How to map a network drive</h3>
+      <p><strong>Windows</strong>:</p>
+      <p>If working from off campus, first connect via Pulse VPN.</p>
+      <p>Then, map a network drive by right clicking on This PC, select Map Network Drive, and enter one of the addresses above in the folder box. Make sure to check "Connect using different credentials" and enter vuds\yourvunetid (replacing "yourvunetid" with your actual vunetid). Also, try to use a consistent drive letter for a given network folder, so that your files will map the same across different computers.</p>
+      <p>To map to sarl_commons, enter: <code>\\sarlserver05.cas.vanderbilt.edu\sarl_commons</code></p>
+      <p>To map to your user folder, enter: <code>\\sarlserver05.cas.vanderbilt.edu\homes\domain=vuds\yourvunetid</code> (replace "yourvunetid" with your actual vunetid!)</p>
+      <p><strong>MacOS</strong>:</p>
+      <p>If working from off campus, first connect via Pulse VPN.</p>
+      <p>Then, go to Finder &gt; Go &gt; Connect to Server and enter (note forward slashes), and enter--</p>
+      <p>To map to sarl_commons, enter: <code>smb://sarlserver05.cas.vanderbilt.edu/sarl_commons</code></p>
+      <p>To map to sarl_commons06, enter: <code>smb://sarlserver06.cas.vanderbilt.edu/sarl_common06</code></p>
+      <p>To map to your user folder, enter: <code>smb://sarlserver05.cas.vanderbilt.edu/homes/domain=vuds\yourvunetid</code> (replace "yourvunetid" with your actual vunetid!)</p>
+      <p>Authenticate using your vuds\yourvunetid, not your local macos login.</p>
+      <p>Once a network drive is mapped on a given computer, it will remain mapped for all subsequent login sessions.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2 class="section-heading">Remote Desktop Access</h2>
+      <p>If you would like to work on a SARL workstation remotely, contact Prof. Wernke for permission and instructions.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2 class="section-heading">Data Security and Backups</h2>
+      <p>All data on the SARL server are mirrored (bit-level copies of all data exist in real-time using RAID). Nightly backups on the server are also performed. However, SARL assumes no responsibility for long-term data integrity, and users are encouraged to back up and archive their data to personal external drives, optical media, etc.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 SARL · Vanderbilt University</span>
+    <span>Garland Hall, Room 328</span>
+  </footer>
+  <script src="js/nav.js"></script>
+</body>
+</html>
