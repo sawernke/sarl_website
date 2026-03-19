@@ -118,15 +118,19 @@ a:hover {
   border: none;
   cursor: pointer;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
+  padding: 6px;
+  z-index: 1001;
 }
 
 .hamburger span {
   display: block;
-  width: 22px;
-  height: 2px;
-  background: var(--heading);
-  transition: transform 0.2s;
+  width: 24px;
+  height: 3px;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* === Hero (homepage only) === */
@@ -266,8 +270,8 @@ a:hover {
 }
 
 .profile-photo {
-  width: 120px;
-  max-height: 160px;
+  width: 180px;
+  max-height: 240px;
   border-radius: 4px;
   flex-shrink: 0;
   object-fit: cover;
@@ -367,7 +371,7 @@ a:hover {
 }
 
 .contact-photo {
-  width: 180px;
+  width: 270px;
   border-radius: 4px;
   flex-shrink: 0;
 }
@@ -394,9 +398,16 @@ a:hover {
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
-    padding: 12px 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 220px;
+    background: var(--white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 0 8px;
+    padding: 8px 0;
     gap: 0;
+    z-index: 1000;
   }
 
   .nav-links.open {
@@ -404,12 +415,22 @@ a:hover {
   }
 
   .nav-links a {
-    padding: 10px 0;
+    padding: 12px 20px;
     border-bottom: 1px solid #eee;
+    font-size: 15px;
+  }
+
+  .nav-links li:last-child a {
+    border-bottom: none;
+  }
+
+  .nav-links a:hover {
+    background: var(--bg);
   }
 
   .site-nav {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    position: relative;
   }
 
   .hero {
@@ -429,7 +450,7 @@ a:hover {
   }
 
   .profile-photo {
-    width: 80px;
+    width: 120px;
   }
 
   .equipment-grid {
@@ -441,7 +462,7 @@ a:hover {
   }
 
   .contact-photo {
-    width: 140px;
+    width: 210px;
   }
 
   .site-footer {
