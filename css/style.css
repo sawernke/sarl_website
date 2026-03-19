@@ -296,6 +296,26 @@ a:hover {
   color: var(--gold);
 }
 
+/* === Facilities === */
+.content ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.content ul li {
+  margin-bottom: 6px;
+}
+
+.facility-figure {
+  margin-top: 16px;
+}
+
+.facility-figure figcaption {
+  font-size: 13px;
+  color: var(--secondary);
+  margin-top: 6px;
+}
+
 /* === Facilities equipment grid === */
 .equipment-grid {
   display: grid;
