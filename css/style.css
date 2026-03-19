@@ -156,7 +156,7 @@ a:hover {
 }
 
 .hero .site-nav .logo-name {
-  color: rgba(255, 255, 255, 0.95);
+  color: var(--gold-light);
 }
 
 .hero .site-nav .logo-sub {
@@ -180,7 +180,7 @@ a:hover {
   font-family: system-ui, -apple-system, sans-serif;
   font-size: 36px;
   font-weight: 700;
-  color: #fff;
+  color: var(--gold-light);
   line-height: 1.2;
 }
 
