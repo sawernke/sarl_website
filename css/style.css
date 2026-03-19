@@ -56,8 +56,10 @@ a:hover {
   background: var(--white);
 }
 
-.content > p {
+.content > p,
+.content section p {
   margin-bottom: 16px;
+  font-size: 15px;
 }
 
 /* === Nav (subpages) === */
