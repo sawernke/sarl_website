@@ -418,6 +418,16 @@ a:hover {
     padding: 12px 20px;
     border-bottom: 1px solid #eee;
     font-size: 15px;
+    color: var(--body-text);
+  }
+
+  .hero .nav-links a {
+    color: var(--body-text);
+  }
+
+  .hero .nav-links a:hover,
+  .hero .nav-links a.active {
+    color: var(--gold);
   }
 
   .nav-links li:last-child a {
