@@ -169,13 +169,15 @@ a:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.hero .nav-links a {
-  color: rgba(255, 255, 255, 0.85);
-}
+@media (min-width: 769px) {
+  .hero .nav-links a {
+    color: rgba(255, 255, 255, 0.85);
+  }
 
-.hero .nav-links a:hover,
-.hero .nav-links a.active {
-  color: var(--gold-light);
+  .hero .nav-links a:hover,
+  .hero .nav-links a.active {
+    color: var(--gold-light);
+  }
 }
 
 .hero-text {
@@ -420,15 +422,6 @@ a:hover {
     border-bottom: 1px solid #eee;
     font-size: 15px;
     color: var(--body-text);
-  }
-
-  .hero .nav-links a {
-    color: var(--body-text);
-  }
-
-  .hero .nav-links a:hover,
-  .hero .nav-links a.active {
-    color: var(--gold);
   }
 
   .nav-links li:last-child a {
