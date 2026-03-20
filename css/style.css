@@ -415,6 +415,7 @@ a:hover {
   }
 
   .nav-links a {
+    display: block;
     padding: 12px 20px;
     border-bottom: 1px solid #eee;
     font-size: 15px;
@@ -441,6 +442,7 @@ a:hover {
   .site-nav {
     flex-wrap: nowrap;
     position: relative;
+    z-index: 100;
   }
 
   .hero {
