@@ -269,8 +269,8 @@ a:hover {
 }
 
 .profile-photo {
-  width: 180px;
-  max-height: 240px;
+  width: 216px;
+  max-height: 288px;
   border-radius: 4px;
   flex-shrink: 0;
   object-fit: cover;
