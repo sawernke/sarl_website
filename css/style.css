@@ -217,7 +217,7 @@ a:hover {
 }
 
 .section-label {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--gold);
   text-transform: uppercase;
@@ -227,18 +227,15 @@ a:hover {
 }
 
 .section-heading {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--heading);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .section-heading::after {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 2px;
-  background: var(--gold);
-  margin-top: 6px;
+  display: none;
   margin-bottom: 12px;
 }
 
@@ -286,7 +283,7 @@ a:hover {
 }
 
 .profile-title {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--gold);
   margin: 2px 0 8px;
 }
