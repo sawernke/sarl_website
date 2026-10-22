@@ -262,6 +262,7 @@ a:hover {
   padding-bottom: var(--section-gap);
   margin-bottom: var(--section-gap);
   border-bottom: 1px solid #eee;
+  scroll-margin-top: 16px; /* profiles are link targets: team.html#first-last */
 }
 
 .profile:last-child {
@@ -280,6 +281,28 @@ a:hover {
   font-size: 18px;
   font-weight: 700;
   color: var(--heading);
+}
+
+/* Permalink next to each name: shown on hover/focus, always faintly on touch */
+.profile-anchor {
+  margin-left: 4px;
+  font-weight: 400;
+  color: var(--gold);
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.profile:hover .profile-anchor,
+.profile:target .profile-anchor,
+.profile-anchor:focus-visible {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  .profile-anchor {
+    opacity: 0.6;
+  }
 }
 
 .profile-title {
