@@ -342,17 +342,40 @@ a:hover {
 }
 
 /* === Funding logos === */
+/* Each row spans the full width: logos share it in proportion to their
+   aspect ratio, so all logos in a row get the same height (times --scale). */
 .funding-logos {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  align-items: center;
+  flex-direction: column;
+  gap: 20px;
   margin-top: 12px;
 }
 
-.funding-logos img {
-  height: 50px;
-  width: auto;
+.funding-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.funding-row img {
+  flex: calc(var(--ar) * var(--scale, 1)) 1 0;
+  min-width: 0;
+  height: auto;
+}
+
+/* Too narrow for justified rows: wrap each row and center it at a fixed height */
+@media (max-width: 600px) {
+  .funding-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 20px;
+  }
+
+  .funding-row img {
+    flex: none;
+    width: auto;
+    height: calc(40px * var(--scale, 1));
+  }
 }
 
 /* === Software list === */
@@ -471,9 +494,5 @@ a:hover {
     flex-direction: column;
     text-align: center;
     gap: 4px;
-  }
-
-  .funding-logos img {
-    height: 40px;
   }
 }

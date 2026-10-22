@@ -47,14 +47,22 @@
 
     <section>
       <h2 class="section-label">Funding</h2>
+      <!-- --ar is each image's width / height; --scale shrinks a logo within its row -->
       <div class="funding-logos">
-        <img src="images/logos/nsf.png" alt="National Science Foundation logo">
-        <img src="images/logos/acls.png" alt="American Council of Learned Societies logo">
-        <img src="images/logos/neh.jpg" alt="National Endowment for the Humanities logo">
-        <img src="images/logos/vanderbilt-tip.png" alt="Vanderbilt Trans-Institutional Programs logo">
-        <img src="images/logos/vanderbilt-cas.jpg" alt="Vanderbilt College of Arts and Science logo">
-        <img src="images/logos/spencer.jpg" alt="Spencer Foundation logo">
-        <img src="images/logos/nih.png" alt="National Institutes of Health logo">
+        <div class="funding-row">
+          <img src="images/logos/nsf.png" alt="National Science Foundation logo" style="--ar: 150 / 150">
+          <img src="images/logos/schmidt_sciences_logo.svg" alt="Schmidt Sciences logo" style="--ar: 160 / 50">
+          <img src="images/logos/vanderbilt-cas.jpg" alt="Vanderbilt College of Arts and Science logo" style="--ar: 600 / 93">
+          <img src="images/logos/spencer.jpg" alt="Spencer Foundation logo" style="--ar: 400 / 240">
+        </div>
+        <div class="funding-row">
+          <img src="images/logos/vanderbilt-tip.png" alt="Vanderbilt Trans-Institutional Programs logo" style="--ar: 437 / 58; --scale: 0.7">
+          <img src="images/logos/acls.png" alt="American Council of Learned Societies logo" style="--ar: 1024 / 155">
+        </div>
+        <div class="funding-row">
+          <img src="images/logos/nih.png" alt="National Institutes of Health logo" style="--ar: 780 / 120">
+          <img src="images/logos/neh.jpg" alt="National Endowment for the Humanities logo" style="--ar: 600 / 147">
+        </div>
       </div>
     </section>
   </main>
